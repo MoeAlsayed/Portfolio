@@ -2,6 +2,7 @@ div.bodyGallery {
   display: flex;
   justify-content: center;
   align-items: center;
+
   background: radial-gradient(circle at center,
     hsla(0, 0%, 0%, 0.2),
     hsla(0, 0%, 0%, 0.8));
