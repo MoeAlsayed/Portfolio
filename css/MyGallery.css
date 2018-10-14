@@ -1,9 +1,10 @@
 div.bodyGallery {
-  background: radial-gradient(
-    circle at center,
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center,
     hsla(0, 0%, 0%, 0.2),
-    hsla(0, 0%, 0%, 0.8)
-  );
+    hsla(0, 0%, 0%, 0.8));
   overflow: hidden;
 }
 
@@ -66,36 +67,39 @@ img.Gallery {
                   where a/w = 0.24999999999
     */
   --aw: 24.9999999%;
-  clip-path: polygon(
-    var(--aw) 0,
+  clip-path: polygon(var(--aw) 0,
     0 50%,
     var(--aw) 100%,
     calc(100% - var(--aw)) 100%,
     100% 50%,
-    calc(100% - var(--aw)) 0
-  );
+    calc(100% - var(--aw)) 0);
 }
 
 li.Gallery:nth-of-type(1) {
   left: calc(50% - var(--a) - var(--d) * 0.5);
   top: 0;
 }
+
 li.Gallery:nth-of-type(2) {
   left: calc(50% - var(--a) * 2 - var(--d) * 1.5);
   top: calc(var(--h) * 0.5);
 }
+
 li.Gallery:nth-of-type(3) {
   left: calc(50% - var(--a) * 2 - var(--d) * 1.5);
   top: calc(var(--h) * 1.5);
 }
+
 li.Gallery:nth-of-type(4) {
   left: calc(50% - var(--a) - var(--d) * 0.5);
   top: calc(var(--h) * 2);
 }
+
 li.Gallery:nth-of-type(5) {
   left: calc(50% + var(--d) * 0.5);
   top: calc(var(--h) * 0.5);
 }
+
 li.Gallery:nth-of-type(6) {
   left: calc(50% + var(--d) * 0.5);
   top: calc(var(--h) * 1.5);
@@ -122,23 +126,27 @@ ul.Gallery {
   animation: r 4s forwards;
   list-style-type: none;
 }
+
 @keyframes r {
   from {
     transform: rotate(180deg);
   }
+
   to {
     transform: rotate(0);
   }
 }
 
 li.Gallery {
-  animation: ir 4s forwards;
+  animation: ir 4s forwards
 }
+
 @keyframes ir {
   from {
-    transform: rotate(-360deg);
+    transform: rotate(-360deg)
   }
+
   to {
-    transform: rotate(0);
+    transform: rotate(0)
   }
 }
