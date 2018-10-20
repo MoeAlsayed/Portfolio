@@ -2,6 +2,7 @@ div.bodyGallery {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 
   background: radial-gradient(circle at center,
     hsla(0, 0%, 0%, 0.2),
@@ -10,8 +11,8 @@ div.bodyGallery {
 }
 
 ul.Gallery {
-  width: 70vmin;
-  height: 70vmin;
+  width: 100vmin;
+  height: 100vmin;
   position: relative;
 }
 
