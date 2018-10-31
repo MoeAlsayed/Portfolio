@@ -152,3 +152,61 @@ li.Gallery {
     transform: rotate(0)
   }
 }
+
+@media only screen and (max-width: 600px) {
+  li.Gallery {
+    position: static;
+    width: 100%;
+    height: 100;
+  }
+  ul.Gallery{
+    padding: 0%;
+    width: 100%
+  }
+  .bodyGallery {
+
+  }
+}
+/* 
+.line-1,
+.line-2,
+.line-3 {
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+@keyframes typeWriter {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* @keyframes blinkTextCursor {
+  form{
+    
+  }
+} */
+
+/* .line-1 {
+  animation: typeWriter 2s steps(80) 3s 1 normal both;
+}
+
+.line-2 {
+  animation: typeWriter 2s steps(80) 2s 1 normal both;
+}
+
+.line-3 {
+  animation: typeWriter 2s steps(80) 1s 1 normal both;
+}  */
+
+.box{
+  padding: 30px;
+}
+img{
+  width: 100%
+}
